@@ -1,0 +1,22 @@
+name: Check bundesAPI repos
+on:
+  schedule:
+    - cron: "0 4 * * *" # every day at 4 in the morning
+  workflow_dispatch:
+
+jobs:
+  check-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v3
+        with:
+          go-version: "1.18.3"
+      - uses: actions/checkout@v3
+      - run: go run .
+      - name: Create Pull Request if needed
+        id: create-pull-request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "update Readme.md and API list"
+          title: "[bot] Update Readme and API list"
+          delete-branch: true
