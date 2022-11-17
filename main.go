@@ -81,7 +81,7 @@ func main() {
 			break
 		}
 	}
-	var output = "# BundesAPI Repositories \n"
+	var output = "# BundesAPI Repositories\n"
 
 	output += ("### APIs found: " + fmt.Sprintln(apiCount))
 	output += ("### APIs without URL: " + fmt.Sprintln(apiCountMissingURL) + "\n")
