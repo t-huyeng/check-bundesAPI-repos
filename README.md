@@ -1,4 +1,4 @@
-# BundesAPI Repositories 
+# BundesAPI Repositories
 ### APIs found: 42
 ### APIs without URL: 23
 
