@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+
+	"github.com/pterm/pterm"
 )
 
 var pages = 1
@@ -17,6 +19,7 @@ type Dictionary map[string]interface{}
 var apiListMissingURL = []Dictionary{}
 var apiCountMissingDescription = 0
 var apiListMissingDescription = []Dictionary{}
+var apiHTMLreport = []Dictionary{}
 
 func main() {
 
@@ -52,31 +55,36 @@ func main() {
 					// if item is a dict
 					if dict, ok := item.(map[string]interface{}); ok {
 						// get the name of the repo
-						// if name ends with -api
 						name := dict["name"].(string)
 						htmlUrl := dict["html_url"].(string)
 						var infos = map[string]interface{}{"name": name, "html_url": htmlUrl}
-
+						// if name ends with -api
 						if name[len(name)-4:] == "-api" {
-							fmt.Println(name)
+							pterm.Info.Println(name)
 							// increase apiCount
 							apiCount++
 							// check if the repo has a url
 							if dict["homepage"] == nil || dict["homepage"].(string) == "" {
-								fmt.Println("- No URL")
+								pterm.Warning.Println("- No URL")
 								apiCountMissingURL++
 								apiListMissingURL = append(apiListMissingURL, infos)
 							}
 							// check if the repo has a description
 							if dict["description"] == nil || dict["description"].(string) == "" {
-								fmt.Println("- No description")
+								pterm.Warning.Println("- No description")
 								apiCountMissingDescription++
 								apiListMissingDescription = append(apiListMissingDescription, infos)
 							}
-							fmt.Println("---------------------")
-						}
+							pterm.Info.Println("---------------------")
+							// generate vaccum report of openapi
+							// create raw openapi url
+							url := "https://raw.githubusercontent.com/bundesAPI/" + name + "/main/openapi.yaml"
+							GenerateHtml(url)
+							apiHTMLreport = append(apiHTMLreport, infos)
 
+						}
 					}
+
 				}
 
 			}
@@ -97,6 +105,12 @@ func main() {
 	var output = "# BundesAPI Repositories\n"
 
 	output += ("### APIs found: " + fmt.Sprintln(apiCount))
+	output += "\n"
+	base_url := "https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/"
+	// print html report links
+	for _, item := range apiHTMLreport {
+		output += fmt.Sprintln("- [" + item["name"].(string) + "](" + base_url + item["name"].(string) + ".html)")
+	}
 	output += ("### APIs without URL: " + fmt.Sprintln(apiCountMissingURL) + "\n")
 	// for each dict in apiListMissingURL add the name to the output
 	for _, dict := range apiListMissingURL {
