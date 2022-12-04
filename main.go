@@ -75,7 +75,6 @@ func main() {
 								apiCountMissingDescription++
 								apiListMissingDescription = append(apiListMissingDescription, infos)
 							}
-							pterm.Info.Println("---------------------")
 							// generate vaccum report of openapi
 							// create raw openapi url
 							url := "https://raw.githubusercontent.com/bundesAPI/" + name + "/main/openapi.yaml"
@@ -107,9 +106,11 @@ func main() {
 	output += ("### APIs found: " + fmt.Sprintln(apiCount))
 	output += "\n"
 	base_url := "https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/"
+
 	// print html report links
 	for _, item := range apiHTMLreport {
-		output += fmt.Sprintln("- [" + item["name"].(string) + "](" + base_url + item["name"].(string) + ".html)")
+		output += fmt.Sprintln("- [" + item["name"].(string) + "](" + item["html_url"].(string) + ")")
+		output += fmt.Sprintln(" : [OpenAPI Report (Vacuum)](" + base_url + item["name"].(string) + ".html)")
 	}
 	output += ("### APIs without URL: " + fmt.Sprintln(apiCountMissingURL) + "\n")
 	// for each dict in apiListMissingURL add the name to the output

@@ -18,6 +18,8 @@ import (
 	"github.com/pterm/pterm"
 )
 
+// parts of this code are taken from vacuum (https://github.com/daveshanley/vacuum)
+
 func BuildResults(rulesetFlag string, specBytes []byte) (*model.RuleResultSet, *motor.RuleSetExecutionResult, error) {
 
 	// read spec and parse
@@ -37,6 +39,15 @@ func BuildResults(rulesetFlag string, specBytes []byte) (*model.RuleResultSet, *
 	resultSet := model.NewRuleResultSet(ruleset.Results)
 	resultSet.SortResultsByLineNumber()
 	return resultSet, ruleset, nil
+}
+
+// Hack to remove the generated div from the html report
+func remove_generated_line(data []byte) []byte {
+	// remove the line from the file
+	lines := strings.Split(string(data), "\n")
+	lines = append(lines[:1456], lines[1457:]...)
+	output := strings.Join(lines, "\n")
+	return []byte(output)
 }
 
 func GenerateHtml(url string) {
@@ -84,6 +95,7 @@ func GenerateHtml(url string) {
 	report := html_report.NewHTMLReport(specIndex, specInfo, resultSet, stats)
 
 	generatedBytes := report.GenerateReport(false)
+	generatedBytes = remove_generated_line(generatedBytes)
 
 	err = os.WriteFile(reportOutput, generatedBytes, 0664)
 
