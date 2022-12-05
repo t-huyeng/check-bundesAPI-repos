@@ -41,15 +41,6 @@ func BuildResults(rulesetFlag string, specBytes []byte) (*model.RuleResultSet, *
 	return resultSet, ruleset, nil
 }
 
-// Hack to remove the generated div from the html report
-func remove_generated_line(data []byte) []byte {
-	// remove the line from the file
-	lines := strings.Split(string(data), "\n")
-	lines = append(lines[:1456], lines[1457:]...)
-	output := strings.Join(lines, "\n")
-	return []byte(output)
-}
-
 func GenerateHtml(url string) {
 
 	response, _err := http.Get(url)
@@ -92,10 +83,9 @@ func GenerateHtml(url string) {
 	stats = statistics.CreateReportStatistics(specIndex, specInfo, resultSet)
 
 	// generate html report
-	report := html_report.NewHTMLReport(specIndex, specInfo, resultSet, stats)
+	report := html_report.NewHTMLReport(specIndex, specInfo, resultSet, stats, true)
 
 	generatedBytes := report.GenerateReport(false)
-	generatedBytes = remove_generated_line(generatedBytes)
 
 	err = os.WriteFile(reportOutput, generatedBytes, 0664)
 
