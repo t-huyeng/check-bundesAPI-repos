@@ -3,7 +3,7 @@ module t-huyeng/checkbundesapirepos
 go 1.18
 
 require (
-	github.com/daveshanley/vacuum v0.0.42
+	github.com/daveshanley/vacuum v0.0.43
 	github.com/pb33f/libopenapi v0.3.2
 	github.com/pterm/pterm v0.12.50
 )
