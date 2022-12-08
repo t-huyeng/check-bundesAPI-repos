@@ -1460,7 +1460,7 @@ category-report {
         <div class="mobile-warning">
             The mobile experience is still being developed. This may look/feel a bit odd for now.
         </div>
-        <div class="header-statistics"><header-statistic value='1' label='Errors' preset='error-count'></header-statistic><header-statistic value='2' label='Warnings' preset='warning-count'></header-statistic><header-statistic value='84' percentage=true label='Quality Grade'></header-statistic>
+        <div class="header-statistics"><header-statistic value='1' label='Errors' preset='error-count'></header-statistic><header-statistic value='1' label='Warnings' preset='warning-count'></header-statistic><header-statistic value='84' percentage=true label='Quality Grade'></header-statistic>
         </div>
     </section>
     <hr class="header-divider"/>
@@ -1501,27 +1501,17 @@ category-report {
             </nav>
             <result-grid slot="reports">
                 <category-report slot="violation" id="all"><category-rules id="all"><category-rule maxViolations="100"
-                                       totalRulesViolated="3"
-                                       ruleIcon="⚠️" ruleId="oas3-valid-schema-example"
-                                       description="Examples must be present and valid for operations and components" numResults=1 >
-                            <category-rule-result category="examples" howToFix="Examples are critical for consumers to be able to understand schemas and models defined by the spec. Without examples, developers can't understand the type of data the API will return in real life. Examples are turned into mocks and can provide a rich testing capability for APIs. Add detailed examples everywhere!" slot="results" message="Schema for `application/json` does not contain any examples or example data" ruleId="oas3-valid-schema-example" startLine='20' startCol='15' endLine='21' endCol='17' path="$.paths./risikogebiete.get.responses.200"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">18</span><span class="cl"><span class="w">          </span><span class="nt">content</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">            </span><span class="nt">application/json</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line hl"><span class="ln">20</span><span class="cl"><span class="w">              </span><span class="nt">schema</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">                </span><span class="nt">$ref</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#/components/schemas/RiskCountries&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w"></span><span class="nt">components</span><span class="p">:</span><span class="w">
-</span></span></span></code></pre></category-rule-result></category-rule><category-rule maxViolations="100"
-                                       totalRulesViolated="3"
+                                       totalRulesViolated="2"
                                        ruleIcon="❌" ruleId="operation-operationId"
                                        description="Every operation must contain an `operationId`." numResults=1 >
-                            <category-rule-result category="operations" howToFix="Every single operation needs an operationId. It's a critical requirement to be able to identify each individual operation uniquely. Please add an operationId to the operation." slot="results" message="the 'get' operation at path '/risikogebiete' does not contain an operationId" ruleId="operation-operationId" startLine='13' startCol='7' endLine='61' endCol='22' path="$.paths./risikogebiete.get"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">11</span><span class="cl"><span class="w">  </span><span class="nt">/risikogebiete</span><span class="p">:</span><span class="w">
+                            <category-rule-result category="operations" howToFix="Every single operation needs an operationId. It's a critical requirement to be able to identify each individual operation uniquely. Please add an operationId to the operation." slot="results" message="the 'get' operation at path '/risikogebiete' does not contain an operationId" ruleId="operation-operationId" startLine='13' startCol='7' endLine='21' endCol='23' path="$.paths./risikogebiete.get"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">11</span><span class="cl"><span class="w">  </span><span class="nt">/risikogebiete</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">get</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">Liste aller Länder mit Risikoeinstufung</span><span class="w">
 </span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">      </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="l">Liste der Länder</span><span class="w">
 </span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">      </span><span class="nt">responses</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span><span class="nt">&#39;200&#39;</span><span class="p">:</span><span class="w">
 </span></span></span></code></pre></category-rule-result></category-rule><category-rule maxViolations="100"
-                                       totalRulesViolated="3"
+                                       totalRulesViolated="2"
                                        ruleIcon="⚠️" ruleId="operation-tags"
                                        description="Operation `tags` are missing/empty" numResults=1 >
                             <category-rule-result category="tags" howToFix="Operations use tags to define the domain(s) they are apart of. Generally a single tag per operation is used, however some tools use multiple tags. The point is that you need tags! Add some tags to the operation that match the globally available ones." slot="results" message="Tags for `get` operation at path `/risikogebiete` are missing" ruleId="operation-tags" startLine='12' startCol='5' endLine='61' endCol='22' path="$.paths./risikogebiete.get"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">10</span><span class="cl"><span class="nt">paths</span><span class="p">:</span><span class="w">
@@ -1538,7 +1528,7 @@ category-report {
                                        totalRulesViolated="1"
                                        ruleIcon="❌" ruleId="operation-operationId"
                                        description="Every operation must contain an `operationId`." numResults=1 >
-                            <category-rule-result category="operations" howToFix="Every single operation needs an operationId. It's a critical requirement to be able to identify each individual operation uniquely. Please add an operationId to the operation." slot="results" message="the 'get' operation at path '/risikogebiete' does not contain an operationId" ruleId="operation-operationId" startLine='13' startCol='7' endLine='61' endCol='22' path="$.paths./risikogebiete.get"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">11</span><span class="cl"><span class="w">  </span><span class="nt">/risikogebiete</span><span class="p">:</span><span class="w">
+                            <category-rule-result category="operations" howToFix="Every single operation needs an operationId. It's a critical requirement to be able to identify each individual operation uniquely. Please add an operationId to the operation." slot="results" message="the 'get' operation at path '/risikogebiete' does not contain an operationId" ruleId="operation-operationId" startLine='13' startCol='7' endLine='21' endCol='23' path="$.paths./risikogebiete.get"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">11</span><span class="cl"><span class="w">  </span><span class="nt">/risikogebiete</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">get</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">Liste aller Länder mit Risikoeinstufung</span><span class="w">
 </span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">      </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="l">Liste der Länder</span><span class="w">
@@ -1566,17 +1556,7 @@ category-report {
                 </category-report>
                 <category-report slot="violation" id="security"><category-rules id="security"></category-rules>
                 </category-report>
-                <category-report slot="violation" id="examples"><category-rules id="examples"><category-rule maxViolations="100"
-                                       totalRulesViolated="1"
-                                       ruleIcon="⚠️" ruleId="oas3-valid-schema-example"
-                                       description="Examples must be present and valid for operations and components" numResults=1 >
-                            <category-rule-result category="examples" howToFix="Examples are critical for consumers to be able to understand schemas and models defined by the spec. Without examples, developers can't understand the type of data the API will return in real life. Examples are turned into mocks and can provide a rich testing capability for APIs. Add detailed examples everywhere!" slot="results" message="Schema for `application/json` does not contain any examples or example data" ruleId="oas3-valid-schema-example" startLine='20' startCol='15' endLine='21' endCol='17' path="$.paths./risikogebiete.get.responses.200"><pre tabindex="0" class="chroma"><code><span class="line"><span class="ln">18</span><span class="cl"><span class="w">          </span><span class="nt">content</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">            </span><span class="nt">application/json</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line hl"><span class="ln">20</span><span class="cl"><span class="w">              </span><span class="nt">schema</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">                </span><span class="nt">$ref</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#/components/schemas/RiskCountries&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w"></span><span class="nt">components</span><span class="p">:</span><span class="w">
-</span></span></span></code></pre></category-rule-result></category-rule></category-rules>
+                <category-report slot="violation" id="examples"><category-rules id="examples"></category-rules>
                 </category-report>
                 <violation-drawer slot="details"></violation-drawer>
             </result-grid>
@@ -1588,7 +1568,7 @@ category-report {
     <!-- do something in here -->
 </footer><script>
   // statistics
-  window.statistics = {"filesizeKb":1,"filesizeBytes":1654,"specType":"openapi","specFormat":"oas3","version":"3.0.0","references":1,"schemas":1,"paths":1,"operations":1,"overallScore":84,"totalErrors":1,"totalWarnings":2,"categoryStatistics":[{"categoryName":"Contract Information","categoryId":"information","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Operations","categoryId":"operations","numIssues":1,"score":0,"warnings":0,"errors":1,"info":0,"hints":0},{"categoryName":"Tags","categoryId":"tags","numIssues":1,"score":0,"warnings":1,"errors":0,"info":0,"hints":0},{"categoryName":"Schemas","categoryId":"schemas","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Validation","categoryId":"validation","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Descriptions","categoryId":"descriptions","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Security","categoryId":"security","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Examples","categoryId":"examples","numIssues":1,"score":0,"warnings":1,"errors":0,"info":0,"hints":0}]}
+  window.statistics = {"filesizeKb":1,"filesizeBytes":1654,"specType":"openapi","specFormat":"oas3","version":"3.0.0","references":1,"schemas":1,"paths":1,"operations":1,"overallScore":84,"totalErrors":1,"totalWarnings":1,"categoryStatistics":[{"categoryName":"Contract Information","categoryId":"information","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Operations","categoryId":"operations","numIssues":1,"score":0,"warnings":0,"errors":1,"info":0,"hints":0},{"categoryName":"Tags","categoryId":"tags","numIssues":1,"score":0,"warnings":1,"errors":0,"info":0,"hints":0},{"categoryName":"Schemas","categoryId":"schemas","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Validation","categoryId":"validation","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Descriptions","categoryId":"descriptions","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Security","categoryId":"security","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0},{"categoryName":"Examples","categoryId":"examples","numIssues":0,"score":0,"warnings":0,"errors":0,"info":0,"hints":0}]}
 </script>
 <script>
     (()=>{"use strict";setTimeout((function(){const t=document.querySelector("category-piechart");t&&t.setChartData(window.statistics)}),200)})();
