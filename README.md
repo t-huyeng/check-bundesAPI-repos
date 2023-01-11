@@ -1,5 +1,5 @@
 # BundesAPI Repositories
-### APIs found: 42
+### APIs found: 43
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/abfallnavi-api.html)
@@ -65,6 +65,8 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/pflanzenschutzmittelzulassung-api.html)
 - [polizei-brandenburg-api](https://github.com/bundesAPI/polizei-brandenburg-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/polizei-brandenburg-api.html)
+- [regionalatlas-api](https://github.com/bundesAPI/regionalatlas-api)
+ : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/regionalatlas-api.html)
 - [rigoletto-api](https://github.com/bundesAPI/rigoletto-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/rigoletto-api.html)
 - [risikogebiete-api](https://github.com/bundesAPI/risikogebiete-api)
@@ -85,7 +87,7 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 23
+### APIs without URL: 24
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
 - [ausbildungssuche-api](https://github.com/bundesAPI/ausbildungssuche-api)
@@ -106,6 +108,7 @@
 - [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pegel-online-api](https://github.com/bundesAPI/pegel-online-api)
 - [pflanzenschutzmittelzulassung-api](https://github.com/bundesAPI/pflanzenschutzmittelzulassung-api)
+- [regionalatlas-api](https://github.com/bundesAPI/regionalatlas-api)
 - [studiensuche-api](https://github.com/bundesAPI/studiensuche-api)
 - [tagesschau-api](https://github.com/bundesAPI/tagesschau-api)
 - [vag-api](https://github.com/bundesAPI/vag-api)
