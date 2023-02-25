@@ -1,5 +1,5 @@
 # BundesAPI Repositories
-### APIs found: 43
+### APIs found: 44
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/abfallnavi-api.html)
@@ -27,6 +27,8 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/ddb-api.html)
 - [destatis-api](https://github.com/bundesAPI/destatis-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/destatis-api.html)
+- [deutschlandatlas-api](https://github.com/bundesAPI/deutschlandatlas-api)
+ : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/deutschlandatlas-api.html)
 - [diga-api](https://github.com/bundesAPI/diga-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/diga-api.html)
 - [dip-bundestag-api](https://github.com/bundesAPI/dip-bundestag-api)
@@ -87,7 +89,7 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 24
+### APIs without URL: 25
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
 - [ausbildungssuche-api](https://github.com/bundesAPI/ausbildungssuche-api)
@@ -98,6 +100,7 @@
 - [coachingangebote-api](https://github.com/bundesAPI/coachingangebote-api)
 - [dashboard-deutschland-api](https://github.com/bundesAPI/dashboard-deutschland-api)
 - [ddb-api](https://github.com/bundesAPI/ddb-api)
+- [deutschlandatlas-api](https://github.com/bundesAPI/deutschlandatlas-api)
 - [diga-api](https://github.com/bundesAPI/diga-api)
 - [dip-bundestag-api](https://github.com/bundesAPI/dip-bundestag-api)
 - [eco-visio-api](https://github.com/bundesAPI/eco-visio-api)
