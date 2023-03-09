@@ -89,7 +89,7 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 25
+### APIs without URL: 24
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
 - [ausbildungssuche-api](https://github.com/bundesAPI/ausbildungssuche-api)
@@ -107,7 +107,6 @@
 - [entgeltatlas-api](https://github.com/bundesAPI/entgeltatlas-api)
 - [feiertage-api](https://github.com/bundesAPI/feiertage-api)
 - [hilfsmittel-api](https://github.com/bundesAPI/hilfsmittel-api)
-- [hochwasserzentralen-api](https://github.com/bundesAPI/hochwasserzentralen-api)
 - [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pegel-online-api](https://github.com/bundesAPI/pegel-online-api)
 - [pflanzenschutzmittelzulassung-api](https://github.com/bundesAPI/pflanzenschutzmittelzulassung-api)
@@ -117,14 +116,13 @@
 - [vag-api](https://github.com/bundesAPI/vag-api)
 - [weiterbildungssuche-api](https://github.com/bundesAPI/weiterbildungssuche-api)
 
-### APIs without description: 12
+### APIs without description: 11
 
 - [bundestag-lobbyregister-api](https://github.com/bundesAPI/bundestag-lobbyregister-api)
 - [destatis-api](https://github.com/bundesAPI/destatis-api)
 - [dip-bundestag-api](https://github.com/bundesAPI/dip-bundestag-api)
 - [dwd-api](https://github.com/bundesAPI/dwd-api)
 - [hilfsmittel-api](https://github.com/bundesAPI/hilfsmittel-api)
-- [hochwasserzentralen-api](https://github.com/bundesAPI/hochwasserzentralen-api)
 - [lebensmittelwarnung-api](https://github.com/bundesAPI/lebensmittelwarnung-api)
 - [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pflanzenschutzmittelzulassung-api](https://github.com/bundesAPI/pflanzenschutzmittelzulassung-api)
