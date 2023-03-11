@@ -89,7 +89,7 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 16
+### APIs without URL: 15
 
 - [bewerberboerse-api](https://github.com/bundesAPI/bewerberboerse-api)
 - [bundeshaushalt-api](https://github.com/bundesAPI/bundeshaushalt-api)
@@ -103,7 +103,6 @@
 - [hilfsmittel-api](https://github.com/bundesAPI/hilfsmittel-api)
 - [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pegel-online-api](https://github.com/bundesAPI/pegel-online-api)
-- [pflanzenschutzmittelzulassung-api](https://github.com/bundesAPI/pflanzenschutzmittelzulassung-api)
 - [regionalatlas-api](https://github.com/bundesAPI/regionalatlas-api)
 - [studiensuche-api](https://github.com/bundesAPI/studiensuche-api)
 - [vag-api](https://github.com/bundesAPI/vag-api)
