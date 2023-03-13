@@ -89,33 +89,28 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 15
+### APIs without URL: 12
 
 - [bewerberboerse-api](https://github.com/bundesAPI/bewerberboerse-api)
 - [bundeshaushalt-api](https://github.com/bundesAPI/bundeshaushalt-api)
-- [bundestag-lobbyregister-api](https://github.com/bundesAPI/bundestag-lobbyregister-api)
 - [ddb-api](https://github.com/bundesAPI/ddb-api)
 - [deutschlandatlas-api](https://github.com/bundesAPI/deutschlandatlas-api)
 - [diga-api](https://github.com/bundesAPI/diga-api)
 - [dip-bundestag-api](https://github.com/bundesAPI/dip-bundestag-api)
 - [eco-visio-api](https://github.com/bundesAPI/eco-visio-api)
-- [feiertage-api](https://github.com/bundesAPI/feiertage-api)
 - [hilfsmittel-api](https://github.com/bundesAPI/hilfsmittel-api)
-- [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pegel-online-api](https://github.com/bundesAPI/pegel-online-api)
 - [regionalatlas-api](https://github.com/bundesAPI/regionalatlas-api)
 - [studiensuche-api](https://github.com/bundesAPI/studiensuche-api)
 - [vag-api](https://github.com/bundesAPI/vag-api)
 
-### APIs without description: 11
+### APIs without description: 9
 
 - [bundestag-lobbyregister-api](https://github.com/bundesAPI/bundestag-lobbyregister-api)
 - [destatis-api](https://github.com/bundesAPI/destatis-api)
-- [dip-bundestag-api](https://github.com/bundesAPI/dip-bundestag-api)
 - [dwd-api](https://github.com/bundesAPI/dwd-api)
 - [hilfsmittel-api](https://github.com/bundesAPI/hilfsmittel-api)
 - [lebensmittelwarnung-api](https://github.com/bundesAPI/lebensmittelwarnung-api)
-- [marktstammdaten-api](https://github.com/bundesAPI/marktstammdaten-api)
 - [pflanzenschutzmittelzulassung-api](https://github.com/bundesAPI/pflanzenschutzmittelzulassung-api)
 - [smard-api](https://github.com/bundesAPI/smard-api)
 - [strahlenschutz-api](https://github.com/bundesAPI/strahlenschutz-api)
