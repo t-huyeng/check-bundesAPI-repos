@@ -1,5 +1,5 @@
 # BundesAPI Repositories
-### APIs found: 44
+### APIs found: 45
 
 - [abfallnavi-api](https://github.com/bundesAPI/abfallnavi-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/abfallnavi-api.html)
@@ -7,6 +7,8 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/ausbildungssuche-api.html)
 - [autobahn-api](https://github.com/bundesAPI/autobahn-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/autobahn-api.html)
+- [berufenet-api](https://github.com/bundesAPI/berufenet-api)
+ : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/berufenet-api.html)
 - [berufssprachkurssuche-api](https://github.com/bundesAPI/berufssprachkurssuche-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/berufssprachkurssuche-api.html)
 - [bewerberboerse-api](https://github.com/bundesAPI/bewerberboerse-api)
@@ -89,8 +91,9 @@
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/weiterbildungssuche-api.html)
 - [zoll-api](https://github.com/bundesAPI/zoll-api)
  : [OpenAPI Report (Vacuum)](https://t-huyeng.github.io/check-bundesAPI-repos/vacuum-reports/zoll-api.html)
-### APIs without URL: 11
+### APIs without URL: 12
 
+- [berufenet-api](https://github.com/bundesAPI/berufenet-api)
 - [bewerberboerse-api](https://github.com/bundesAPI/bewerberboerse-api)
 - [bundeshaushalt-api](https://github.com/bundesAPI/bundeshaushalt-api)
 - [ddb-api](https://github.com/bundesAPI/ddb-api)
